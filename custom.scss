@@ -1,0 +1,71 @@
+
+
+$primary: rgb(216, 216, 35);
+$secondary: #000;
+$bg-color:#fff;
+$white:#fff;
+$black:#000;
+$grey:rgb(175, 174, 174);
+
+
+
+.bg-color{
+    background-color: $bg-color;
+}
+.bg-primary{
+    background-color: $primary;
+}
+.bg-secondary{
+    background-color: $secondary;
+}
+.logo-argo{
+    width:50px;
+    height: 50px; 
+}
+.jumbotron{
+    transition: background-color 0.5s ease;
+    background-color: $grey;
+
+    &:hover{
+        background-color: $primary;
+    }
+}
+
+section#contact{
+    background-color: $primary;
+}
+form#contactForm{
+    background-color: $bg-color;
+    padding:15px 55px;
+}
+.text-primary {
+    color: $black;
+}
+.text-secondary {
+    color: $white;
+}
+hr.star-light:after {
+    color:$white;
+    background-color: $primary;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: $primary;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: $primary;
+}
+a {
+  color: $primary;
+}
+a:focus, a:hover, a:active {
+    color: $primary;
+}
+button#sendMessageButton{
+    width: 100%;
+}
+
+@import "scss/freelancer";
+
+
+
+
