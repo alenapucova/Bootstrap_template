@@ -7,16 +7,19 @@ $white:#fff;
 $black:#000;
 $grey:rgb(175, 174, 174);
 
+@import "scss/freelancer";
 
-
+body {
+    font-family: "Tahoma";
+}
 .bg-color{
     background-color: $bg-color;
 }
-.bg-primary{
-    background-color: $primary;
-}
-.bg-secondary{
+.bg-color-black{
     background-color: $secondary;
+}
+.bg-color-header{
+    background-color: $primary;
 }
 .logo-argo{
     width:50px;
@@ -24,7 +27,11 @@ $grey:rgb(175, 174, 174);
 }
 .jumbotron{
     transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
     background-color: $grey;
+    height: 200px;
+    padding: 40px 20px;
+    margin: 5px 5px;
 
     &:hover{
         background-color: $primary;
@@ -37,9 +44,13 @@ section#contact{
 form#contactForm{
     background-color: $bg-color;
     padding:15px 55px;
+    border-radius: 5%;
 }
-.text-primary {
+.text-header-h2-b {
     color: $black;
+}
+.text-header-h2-w {
+    color: $white;
 }
 .text-secondary {
     color: $white;
@@ -63,8 +74,68 @@ a:focus, a:hover, a:active {
 button#sendMessageButton{
     width: 100%;
 }
+button.bg-btn{
+    background-color:$primary;
 
-@import "scss/freelancer";
+    &:hover{
+        background-color:$primary;
+    }
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active{
+    color: $white;
+}
+#portfolio .row{
+   max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    
+}
+#portfolio .portfolio-item{
+    width: 100%;
+    margin: auto;
+}
+.right-align{
+    text-align: right;
+}
+#portfolio ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+@media (max-width:770px) {
+    .jumbotron{
+        width: 100%;
+       
+        ul li{
+            padding-left: 10px;
+        }
+    }
+    .row{
+        padding: 0;
+    }
+    .portfolio .portfolio-item {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .colums{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (min-width: 992px){
+    .colums .col-lg-6{
+        padding-left: 80px;
+      }
+}
+@media (min-width: 1200px){
+    .colums .col-lg-6{
+        padding-left: 100px;
+      }
+}
+
 
 
 

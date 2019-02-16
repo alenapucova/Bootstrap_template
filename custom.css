@@ -1,71 +1,4 @@
 @charset "UTF-8";
-.bg-color {
-  background-color: #fff;
-}
-
-.bg-primary {
-  background-color: #d8d823;
-}
-
-.bg-secondary {
-  background-color: #000;
-}
-
-.logo-argo {
-  width: 50px;
-  height: 50px;
-}
-
-.jumbotron {
-  transition: background-color 0.5s ease;
-  background-color: #afaeae;
-}
-.jumbotron:hover {
-  background-color: #d8d823;
-}
-
-section#contact {
-  background-color: #d8d823;
-}
-
-form#contactForm {
-  background-color: #fff;
-  padding: 15px 55px;
-}
-
-.text-primary {
-  color: #000;
-}
-
-.text-secondary {
-  color: #fff;
-}
-
-hr.star-light:after {
-  color: #fff;
-  background-color: #d8d823;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #d8d823;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #d8d823;
-}
-
-a {
-  color: #d8d823;
-}
-
-a:focus, a:hover, a:active {
-  color: #d8d823;
-}
-
-button#sendMessageButton {
-  width: 100%;
-}
-
 body {
   font-family: "Lato";
 }
@@ -389,19 +322,19 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #d8d823 !important;
+  background-color: #d8d823;
 }
 
 .bg-secondary {
-  background-color: #000 !important;
+  background-color: #000;
 }
 
 .text-primary {
-  color: #d8d823 !important;
+  color: #d8d823;
 }
 
 .text-secondary {
-  color: #000 !important;
+  color: #000;
 }
 
 .btn-primary {
@@ -420,6 +353,151 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: black;
   border-color: black;
+}
+
+body {
+  font-family: "Tahoma";
+}
+
+.bg-color {
+  background-color: #fff;
+}
+
+.bg-color-black {
+  background-color: #000;
+}
+
+.bg-color-header {
+  background-color: #d8d823;
+}
+
+.logo-argo {
+  width: 50px;
+  height: 50px;
+}
+
+.jumbotron {
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  background-color: #afaeae;
+  height: 200px;
+  padding: 40px 20px;
+  margin: 5px 5px;
+}
+.jumbotron:hover {
+  background-color: #d8d823;
+}
+
+section#contact {
+  background-color: #d8d823;
+}
+
+form#contactForm {
+  background-color: #fff;
+  padding: 15px 55px;
+  border-radius: 5%;
+}
+
+.text-header-h2-b {
+  color: #000;
+}
+
+.text-header-h2-w {
+  color: #fff;
+}
+
+.text-secondary {
+  color: #fff;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #d8d823;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #d8d823;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #d8d823;
+}
+
+a {
+  color: #d8d823;
+}
+
+a:focus, a:hover, a:active {
+  color: #d8d823;
+}
+
+button#sendMessageButton {
+  width: 100%;
+}
+
+button.bg-btn {
+  background-color: #d8d823;
+}
+button.bg-btn:hover {
+  background-color: #d8d823;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #fff;
+}
+
+#portfolio .row {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#portfolio .portfolio-item {
+  width: 100%;
+  margin: auto;
+}
+
+.right-align {
+  text-align: right;
+}
+
+#portfolio ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (max-width: 770px) {
+  .jumbotron {
+    width: 100%;
+  }
+  .jumbotron ul li {
+    padding-left: 10px;
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .portfolio .portfolio-item {
+    text-align: center;
+    margin: auto;
+  }
+
+  .colums {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .colums .col-lg-6 {
+    padding-left: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .colums .col-lg-6 {
+    padding-left: 100px;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
